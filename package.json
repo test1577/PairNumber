@@ -1,0 +1,15 @@
+{
+  "name": "test-ascend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon ./index.js 80"
+  },
+  "author": "",
+  "license": "ISC"
+}
