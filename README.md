@@ -1,7 +1,7 @@
-This project was Nodejs with [nodemon].
+This project was Test Ascend logic with [nodejs/nodemon].
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm install` then run ### `yarn start`
+### `npm install` then run ### `npm start`
