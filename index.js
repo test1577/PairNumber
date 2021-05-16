@@ -1,4 +1,8 @@
-console.log("test ascend");
+const INPUT = 7;
+const MOCKDATA = [1, 2, 3, 4, 5];
+
+const getMaxValArr = (arr) => 
+console.log(`Answer : ${Math.max(...arr)}`);
 
 const removeDuplicateData = (arr) => {
     const dataList = [];
@@ -11,10 +15,8 @@ const removeDuplicateData = (arr) => {
   return dataList;
 };
 
-const getResultPairNumber = (input) => {
-  const mockData = [1, 2, 3, 4, 5];
+const getResultPairNumber = (input, mockData) => {
   const count = mockData.length;
-  console.log("input :", input);
   const match = [];
   for (let i = 0; i < count; i++) {
     for (let j = 0; j < count; j++) {
@@ -27,8 +29,12 @@ const getResultPairNumber = (input) => {
   }
 
   const rs = removeDuplicateData(match);
-  console.log(`Result : ${JSON.stringify(rs)}`);
+  console.log(`Answer : ${JSON.stringify(rs)}`);
 
 };
 
-getResultPairNumber(7);
+
+console.log('1.Find max in the array of numbers : ')
+getMaxValArr(MOCKDATA);
+console.log('2.Given an array of numbers, please find all pair numbers which result in the given number. : ')
+getResultPairNumber(INPUT, MOCKDATA);
